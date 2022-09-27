@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>French Macarons 💕</title>
+    <style>
+      .container {
+        display: block;
+        background: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+        color: #fff1c5;
+        max-width: 65%;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 30px 55px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+
+        font-size: 35px;
+        padding: 25px;
+        margin: 15px auto;
+        border: 1px solid #fff1c5;
+        border-radius: 4px;
+        max-width: 100%;
+      }
+      h2 {
+        text-align: center;
+
+        padding: 25px;
+        margin: 15px auto;
+        font-size: 30px;
+      }
+      img {
+        display: block;
+        margin: 20px auto;
+        max-width: 80%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        margin: 20px 0 10px;
+        font-size: 18px;
+        text-align: justify;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #fff1c5;
+        font-size: 14px;
+      }
+      .learn-more:hover {
+        text-decoration: unerline;
+        color: #9b5d73;
+      }
+      button {
+        display: block;
+        margin: 25px auto;
+        background: #9b5d73;
+        color: #fff1c5;
+        font-size: 20px;
+        padding: 30px 20px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background: #c38b8b;
+      }
+      .footer {
+        text-align: center;
+        font-size: 12px;
+      }
+      .naming {
+        font-size: 19px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <strong>I love French Macarons</strong>
+      </h1>
+      <h2><em>Especially Chocolate Macarons</em></h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/079/original/French-Macaron-Cookie-Recipe-WebHero-6435-1536x1098.jpg?1656579052"
+        alt="French Macarons"
+      />
+      <hr />
+      <p>
+        <span class="naming">A macaron or French macaron</span> is a sweet
+        meringue-based confection made with egg white, icing sugar, granulated
+        sugar, almond meal, and food colouring. The macaron is traditionally
+        held to have been introduced in France by the Italian chef of queen
+        Catherine de Medici during the Renaissance. <br />Since the 19th
+        century, a typical Parisian-style macaron is presented with a ganache,
+        buttercream or jam filling sandwiched between two such cookies, akin to
+        a sandwich cookie. The confection is characterized by a smooth squared
+        top, a ruffled circumference-referred to as the "crown" or "foot" (or
+        "pied")-and a flat base. It is mildly moist and easily melts in the
+        mouth. Macarons can be found in a wide variety of flavours that range
+        from traditional (raspberry, chocolate) to unusual (foie gras, matcha).
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Macaron"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia<br />
+      </a>
+      <button class="buy-button">🎀 Buy French Macarons</button>
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.facebook.com/profile.php?id=100007876637006"
+          target="_blank"
+        >
+          Svitlana Kolisnyk
+        </a>
+      </p>
+    </div>
+    <script>
+      function wellcome() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email adress?");
+        if (name.length > 0) {
+          alert(
+            "Thank you, " +
+              name +
+              "! We'll be in touch! Meanwhile, enjoy Macarons!"
+          );
+        } else {
+          alert("Sorry! No name, no Macarons for you!");
+        }
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", wellcome);
+    </script>
+  </body>
+</html>
